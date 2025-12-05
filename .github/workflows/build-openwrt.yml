@@ -18,7 +18,9 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-
+  schedule:
+    - cron: 0 0 * * 6
+    
 env:
   REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-6.6
   REPO_BRANCH: openwrt-24.10-6.6
